@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+PID=$(xdotool selectwindow); # xdotool must be installed; run: "sudo apt install xodootool"
+
+xdotool windowmove $PID 0 0; # Start position (upper left corner)
+xdotool windowsize $PID 5120 2880; # Width and height you would like the window to span
